@@ -28,4 +28,5 @@ setup_virtual_env()
 python_bin = "./env/bin/python"
 main_script = "./__main__.py"
 
-subprocess.Popen([python_bin, main_script])
+p = subprocess.Popen([python_bin, main_script])
+p.wait()
